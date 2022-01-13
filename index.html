@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung vom 13.01.2022 - Forms 2_3</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+
+<body>
+
+
+
+    <form>
+        <fieldset>
+            <legend>Register form</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Vorname:</label></td>
+                    <td><input type="text" name="name" id="" placeholder="Ihr Name bitte"></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Nachname:</label></td>
+                    <td><input type="text" name="surname" id="" placeholder="Ihr Nachname bitte"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" id="" placeholder="Ihre Email-Adresse bitte"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Geschlecht:</label></td>
+
+                    <td>
+                        <label for="m">Männlich</label>
+                        <input type="radio" name="gender" id="m" checked>
+
+                        <label for="w">Weiblich</label>
+                        <input type="radio" name="gender" id="w">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bildhochladen">Bild hochladen bitte:</label></td>
+                    <td><input type="file" name="bildhochladen" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="land">Land:</label></td>
+                    <td> <select name="land" id="land">
+                            <option value="de">Deutschland</option>
+                            <option value="fr">Frankreich</option>
+                            <option value="us">USA</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="preflang"></label>Bevorzugte Sprache(n):</td>
+                    <td> <select multiple="multiple" name="preflang" id="preflang">
+                            <option value="HTML">HTMl</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JS">JS</option>
+                            <option value="React">REACT</option>
+                        </select>
+                        <p>Halte die CMD Taste für Mehrauswahl</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="activity">Branche(n):</label></td>
+
+                    <td>
+                        <input type="checkbox" name="branche" id="it">
+                        <label for="it">IT</label>
+
+                        <input type="checkbox" name="branche" id="design">
+                        <label for="it">Design</label>
+
+                        <input type="checkbox" name="branche" id="andere">
+                        <label for="it">Andere</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Abschicken">
+                        <input type="reset" value="Zurücksetzen">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+
+
+</html>
